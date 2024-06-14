@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -17,18 +16,19 @@ import { CarouselModule} from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { NavIconComponent } from './nav-icon/nav-icon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     NavigationComponent,
     AccueilComponent,
     PortfolioComponent,
     ExperiencesComponent,
     ContactComponent,
     CardProjectComponent,
-    ProjectModalComponent
+    ProjectModalComponent,
+    NavIconComponent
   ],
   imports: [
     BrowserModule,

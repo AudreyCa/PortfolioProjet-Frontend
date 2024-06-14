@@ -21,7 +21,7 @@ export class ExperiencesComponent {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', "_blank");
     link.setAttribute('href', "../../assets/CV_DevWeb_AudreyCannesson.pdf");
-    link.setAttribute('download', "CV_DevWeb_AudreyCannesson.pdf"); // nom de mon CV
+    link.setAttribute('download', "CV_ConceptriceDeveloppeuseDApplications_AudreyCannesson.pdf"); // nom de mon CV
     link.click(); // download le temps d'etre récupérer
     link.remove(); // puis enlever de notre site jusqu'au prochain click
   }

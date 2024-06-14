@@ -1,0 +1,106 @@
+.header-component {
+  height: 100px;
+  width: 100vw;
+  max-width: 1140px;
+  padding: 1.5%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: clamp(0.75rem, 0.5268rem + 1.1905vw, 1.375rem);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+  }
+  nav {
+    ul {
+      list-style-type: none;
+      display: flex;
+      padding: 10px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      margin: 0;
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-size: clamp(0.875rem, 0.3942rem + 1.0256vw, 1.125rem);
+      }
+      .activ-nav {
+        border-bottom: 0px solid transparent;
+        animation: animate-border 0.1s ease-in forwards 0.1s;
+      }
+      @keyframes animate-border {
+        from {
+          border-bottom-width: 0px;
+        }
+        to {
+          border-bottom-width: 2px;
+        }
+      }
+      .active-home {
+        border-image: linear-gradient(
+            to right,
+            rgb(0, 0, 0) 0%,
+            #ec887a 50%,
+            rgb(0, 0, 0) 100%
+          )
+          1;
+        color: #ec887a;
+        text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.6);
+      }
+      .active-portfolio {
+        border-image: linear-gradient(
+            to right,
+            rgb(0, 0, 0) 0%,
+            #c577b4 50%,
+            rgb(0, 0, 0) 100%
+          )
+          1;
+        color: #c577b4;
+        text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.6);
+      }
+      .active-expe {
+        border-image: linear-gradient(
+            to right,
+            rgb(0, 0, 0) 0%,
+            #00ffc3 50%,
+            rgb(0, 0, 0) 100%
+          )
+          1;
+        color: #00ffc3;
+      }
+      .active-contact {
+        border-image: linear-gradient(
+            to right,
+            rgb(0, 0, 0) 0%,
+            #4c80f1 50%,
+            rgb(0, 0, 0) 100%
+          )
+          1;
+        color: #4c80f1;
+      }
+    }
+  }
+  @media (max-width: 750px) {
+    h1{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      font-size: clamp(1.125rem, 0.8333rem + 1.5556vw, 1.5625rem);
+      text-align: center;
+      padding: 2%;
+    }
+    nav {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.portfolio-content {
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 70px;
+
+  h2 {
+    margin: 0;
+    padding: 30px 10px;
+    color: #c577b4;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-shadow: -2px 1px 2px rgba(255, 255, 255, 0.377);
+  }
+
+  .btn-filtre {
+    display: flex;
+    flex-wrap: wrap;
+    .btn_filtre_projets {
+      padding: auto;
+      margin: 10px;
+      width: 150px;
+      height: 50px;
+      color: white;
+      background-color: black;
+      border: 2px solid #c577b4;
+      border-radius: 50px;
+      &:hover {
+        color: #c577b4;
+        border: 3px solid white;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+
+    .card-project {
+      width: 350px;
+      margin: 5px;
+    }
+  }
+}

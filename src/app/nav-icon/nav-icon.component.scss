@@ -1,0 +1,54 @@
+.nav-icon {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+
+  nav {
+    padding: auto;
+    background-color: rgba(34, 34, 34, 0.911);
+    border-radius: 10px;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        margin: 10px;
+        padding: auto;
+
+        svg{
+          color: white;
+        }
+      }
+
+      .active-home > svg {
+        fill: #ec887a;
+      }
+      .active-portfolio > svg {
+        fill: #c577b4;
+      }
+      .active-expe > svg {
+        fill: #00ffc3;
+      }
+      .active-contact > svg {
+        fill: #4c80f1;
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .nav-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 70px;
+  }
+}

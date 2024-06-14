@@ -18,7 +18,7 @@ export class CardProjectComponent {
 
   OpenProjectModal() {
     const modalOptions: ModalOptions = {
-      class: "modal-lg",
+      class: "modal_projet_content",
       initialState: {
         projet: this.projet
       }

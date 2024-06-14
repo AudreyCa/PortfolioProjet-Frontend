@@ -1,1 +1,25 @@
+.container_modal-projets{
+  background-color: black;
+  color: white;
+  padding: 10px;
 
+  .modal-header{
+    display: flex;
+    justify-content: space-between;
+    .close_popup{
+      color:white;
+      background-color: black;
+      border: none;
+    }
+  }
+
+  .caroussel_content{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    img{
+      max-height: 300px;
+      width: auto;
+    }
+  }
+}
