@@ -72,10 +72,14 @@
           padding: 10px;
           font-size: clamp(1.125rem, 1.0099rem + 0.614vw, 1.5625rem);
           font-weight: 600;
-          text-shadow: 2px 2px 4px black;
+          text-shadow: 3px 2px 4px black;
 
           .card-title{
             margin: 0;
+          }
+
+          svg{
+            filter: drop-shadow(2px 2px 1px black);
           }
         }
       }
