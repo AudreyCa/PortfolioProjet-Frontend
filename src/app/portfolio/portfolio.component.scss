@@ -10,11 +10,15 @@
   h2 {
     margin: 0;
     padding: 30px 10px;
-    color: #c577b4;
+    background-image: linear-gradient(to bottom,#ffffff, #be97b6, #af78a3, #c577b4);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    // color: #c577b4;
     font-weight: 800;
-    font-size: 40px;
+    font-size: clamp(1.5625rem, 1.2336rem + 1.7544vw, 2.8125rem);
     letter-spacing: 4px;
-    text-shadow: -2px 1px 2px rgba(255, 255, 255, 0.377);
   }
 
   .btn-filtre {

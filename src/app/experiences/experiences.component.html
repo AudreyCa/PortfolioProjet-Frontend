@@ -1,22 +1,30 @@
 <div class="expe-content">
-  <button (click)="DownloadCV()" class="btn btn-primary mb-5 shadow border">Télécharger le CV</button>
+  <h2>EXPERIENCES</h2>
 
-  <div class="pb-2">
-    <accordion [isAnimated]="true" class="shadow">
+  <div class="btnCV">
+    <button (click)="DownloadCV()">Télécharger le CV</button>
+  </div>
+
+  <div class="contenu-exp">
+    <accordion [isAnimated]="true" class="accordeon-content">
 
       <!-- Expériences -->
-      <accordion-group [(isOpen)]="isExperienceOpen">
-        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+      <accordion-group [(isOpen)]="isExperienceOpen" class="accordeon-group">
+        <button class="accordeon-title" accordion-heading>
           <div style="visibility: hidden;">></div>
-          <div class="btn-link">Expériences</div>
-          <div style="width: 10.95px;">
-            <div *ngIf="!isExperienceOpen" style="color: white;">></div>
-            <div *ngIf="isExperienceOpen" style="color: white;">v</div>
+          <div class="card-title">Expériences</div>
+          <div>
+            <div *ngIf="!isExperienceOpen">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="20" height="20" fill="white"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+            </div>
+            <div *ngIf="isExperienceOpen" style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="white"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </div>
           </div>
         </button>
-        <div style="text-align: left">
-          <h2 class="mb-0">Titre de mon job</h2>
-          <h3 class="text-primary">Nom de l'entreprise</h3>
+        <div>
+          <h3 class="">Titre de mon job</h3>
+          <h3 class="">Nom de l'entreprise</h3>
           <ul>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, provident.</li>
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, provident.</li>
@@ -27,17 +35,21 @@
       </accordion-group>
 
       <!-- Etudes -->
-      <accordion-group [(isOpen)]="isEtudesOpen">
-        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+      <accordion-group [(isOpen)]="isEtudesOpen" class="accordeon-group">
+        <button class="accordeon-title" accordion-heading>
           <div style="visibility: hidden;">></div>
-          <div class="btn-link">Etudes</div>
-          <div style="width: 10.95px;">
-            <div *ngIf="!isEtudesOpen" style="color: white;">></div>
-            <div *ngIf="isEtudesOpen" style="color: white;">v</div>
+          <div class="card-title">Etudes</div>
+          <div>
+            <div *ngIf="!isEtudesOpen" style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="20" height="20" fill="white"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+            </div>
+            <div *ngIf="isEtudesOpen" style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="white"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </div>
           </div>
         </button>
         <div style="text-align: left">
-          <h2 class="mb-0">Niveau et titre étude</h2>
+          <h3 class="mb-0">Niveau et titre étude</h3>
           <h3 class="text-primary">Nom ecole + lieu</h3>
           <ul>
             <li>Année d'études</li>
@@ -45,7 +57,7 @@
           </ul>
         </div>
         <div style="text-align: left">
-          <h2 class="mb-0">Niveau et titre étude</h2>
+          <h3 class="mb-0">Niveau et titre étude</h3>
           <h3 class="text-primary">Nom ecole + lieu</h3>
           <ul>
             <li>Année d'études</li>
@@ -56,12 +68,16 @@
 
       <!-- Dîplomes-->
       <accordion-group  [(isOpen)]="isDilpomesOpen">
-        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <button class="accordeon-title" accordion-heading>
           <div style="visibility: hidden;">></div>
-          <div class="btn-link">Diplômes</div>
-          <div style="width: 10.95px;">
-            <div *ngIf="!isDilpomesOpen" style="color: white;">></div>
-            <div *ngIf="isDilpomesOpen" style="color: white;">v</div>
+          <div class="card-title">Diplômes</div>
+          <div>
+            <div *ngIf="!isDilpomesOpen" style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="20" height="20" fill="white"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+            </div>
+            <div *ngIf="isDilpomesOpen" style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="white"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </div>
           </div>
         </button>
         <div style="text-align: left">
@@ -82,12 +98,16 @@
 
       <!-- Compétences -->
       <accordion-group [(isOpen)]="isSkillsOpen">
-        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <button class="accordeon-title" accordion-heading>
           <div style="visibility: hidden;">></div>
-          <div class="btn-link">Compétences</div>
-          <div style="width: 10.95px;">
-            <div *ngIf="!isSkillsOpen" style="color: white;">></div>
-            <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+          <div class="card-title">Compétences</div>
+          <div>
+            <div *ngIf="!isSkillsOpen" style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="20" height="20" fill="white"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+            </div>
+            <div *ngIf="isSkillsOpen" style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="white"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </div>
           </div>
         </button>
         <div class="row"style="text-align: left">
@@ -120,4 +140,121 @@
     </accordion>
   </div>
 
+
 </div>
+
+
+<!-- <div class="pb-2">
+  <accordion [isAnimated]="true" class="shadow">
+
+    <accordion-group [(isOpen)]="isExperienceOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Expériences</div>
+        <div style="width: 10.95px;">
+          <div *ngIf="!isExperienceOpen" style="color: white;">></div>
+          <div *ngIf="isExperienceOpen" style="color: white;">v</div>
+        </div>
+      </button>
+      <div style="text-align: left">
+        <h3 class="mb-0">Titre de mon job</h3>
+        <h3 class="text-primary">Nom de l'entreprise</h3>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, provident.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, provident.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, provident.</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, provident.</li>
+        </ul>
+      </div>
+    </accordion-group>
+
+    <accordion-group [(isOpen)]="isEtudesOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Etudes</div>
+        <div style="width: 10.95px;">
+          <div *ngIf="!isEtudesOpen" style="color: white;">></div>
+          <div *ngIf="isEtudesOpen" style="color: white;">v</div>
+        </div>
+      </button>
+      <div style="text-align: left">
+        <h3 class="mb-0">Niveau et titre étude</h3>
+        <h3 class="text-primary">Nom ecole + lieu</h3>
+        <ul>
+          <li>Année d'études</li>
+          <li>Résumé des compétences étudiées</li>
+        </ul>
+      </div>
+      <div style="text-align: left">
+        <h3 class="mb-0">Niveau et titre étude</h3>
+        <h3 class="text-primary">Nom ecole + lieu</h3>
+        <ul>
+          <li>Année d'études</li>
+          <li>Résumé des compétences étudiées</li>
+        </ul>
+      </div>
+    </accordion-group>
+
+    <accordion-group  [(isOpen)]="isDilpomesOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Diplômes</div>
+        <div style="width: 10.95px;">
+          <div *ngIf="!isDilpomesOpen" style="color: white;">></div>
+          <div *ngIf="isDilpomesOpen" style="color: white;">v</div>
+        </div>
+      </button>
+      <div style="text-align: left">
+        <h3 class="text-primary">Nom diplôme avec referentiel</h3>
+        <ul>
+          <li>N° referentiel plus equivalent niveau</li>
+          <li>Obtenu le ....</li>
+        </ul>
+      </div>
+      <div style="text-align: left">
+        <h3 class="text-primary">Nom diplôme avec referentiel</h3>
+        <ul>
+          <li>N° referentiel plus equivalent niveau</li>
+          <li>Obtenu le ....</li>
+        </ul>
+      </div>
+    </accordion-group>
+
+    <accordion-group [(isOpen)]="isSkillsOpen">
+      <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+        <div style="visibility: hidden;">></div>
+        <div class="btn-link">Compétences</div>
+        <div style="width: 10.95px;">
+          <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+          <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+        </div>
+      </button>
+      <div class="row"style="text-align: left">
+        <div class="col">
+          <h3>Languages:</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Framework:</h3>
+          <ul>
+            <li>Express</li>
+            <li>Angular</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Autres compétences:</h3>
+          <ul>
+            <li>CLI</li>
+            <li>Développement agile</li>
+            <li>...</li>
+          </ul>
+        </div>
+      </div>
+    </accordion-group>
+  </accordion>
+</div> -->

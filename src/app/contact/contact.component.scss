@@ -5,4 +5,18 @@
   flex-wrap: wrap;
   padding: 10px;
   padding-bottom: 70px;
+
+  h2 {
+    margin: 0;
+    padding: 30px 10px;
+    background-image: linear-gradient(to bottom,#ffffff, #9cb2e0, #4c80f1, #1858e2);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    font-size: clamp(1.5625rem, 1.2336rem + 1.7544vw, 2.8125rem);
+    letter-spacing: 4px;
+  }
+
 }
