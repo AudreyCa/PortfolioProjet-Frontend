@@ -1,15 +1,23 @@
-.contact-content{
+.contact-content {
   max-width: 1140px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 10px 20px;
-  padding-bottom: 70px;
+  align-items: center;
+  padding: 10px 20px 70px;
+  box-sizing: border-box;
 
   h2 {
     margin: 0;
     padding: 30px 10px;
-    background-image: linear-gradient(to bottom,#ffffff, #9cb2e0, #4c80f1, #1858e2);
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff,
+      #9cb2e0,
+      #4c80f1,
+      #1858e2
+    );
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -18,36 +26,56 @@
     font-size: clamp(1.5625rem, 1.2336rem + 1.7544vw, 2.8125rem);
     letter-spacing: 4px;
     text-align: center;
+    white-space: pre-wrap;
   }
 
-  .intro-contact{
-    padding: 10px 20px;
+  .intro-contact,
+  .intro-recommandations {
+    padding: 5px 20px;
     text-align: justify;
-  }
-
-  .icon-contact{
-    padding:  10px 20px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
-    a, .mail{
+    .accroche {
+      font-size: clamp(1.125rem, 1.0428rem + 0.4386vw, 1.4375rem);
+      margin-bottom: 0;
+      padding: 5px 0 10px;
+    }
+
+    .reco {
+      padding-top: 20px;
+      margin-bottom: 10px;
+    }
+    .mailto {
+      color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+
+  .icon-contact {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    a {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       margin-bottom: 10px;
       text-decoration: none;
+      color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+      justify-content: center;
 
-      svg{
+      svg {
         margin-right: 13px;
       }
-      p, .mailto{
-        color: white;
+      p,
+      .mailto {
         margin: 0;
       }
     }
-    .mail{
-      margin-left: 3px;
-    }
   }
-
-
 }

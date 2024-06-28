@@ -1,4 +1,22 @@
 export class Tag {
+  static readonly JAVASCRIPT = new Tag('JavaScript');
+  static readonly TYPESCRIPT = new Tag('TypeScript');
+  static readonly ANGULAR = new Tag('Angular');
+  static readonly REACT = new Tag('React');
+  static readonly EXPRESSJS = new Tag('Express');
+  static readonly CSHARP = new Tag('C#');
+
+  private constructor(private readonly key: string){ }
+
+  toString(){
+    return this.key;
+  }
+}
+
+
+
+
+/* export class Tag {
   static readonly JAVASCRIPT = new Tag('JavaScript', 'gold');
   static readonly EXPRESSJS = new Tag('Expressjs', 'green');
   static readonly REACT = new Tag('React', 'darkcyan');
@@ -13,4 +31,4 @@ export class Tag {
   toString(){
     return this.key;
   }
-}
+} */

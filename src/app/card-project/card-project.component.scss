@@ -8,12 +8,12 @@
     padding: auto;
     width: 100px;
     height: 40px;
-    color: white;
+    color: #c577b4;
     background-color: rgb(53, 53, 53);
-    border: 2px solid #c577b4;
+    border: 2px solid white;
     border-radius: 50px;
     &:hover {
-      color: #c577b4;
+      color: white;
       border: 3px solid #c577b4;
       font-weight: 700;
     }
