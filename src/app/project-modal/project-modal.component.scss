@@ -1,25 +1,69 @@
-.container_modal-projets{
+.container_modal_projets {
   background-color: black;
   color: white;
   padding: 10px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
 
-  .modal-header{
+  h3 {
+    padding: 20px 0 10px;
+  }
+  .modal-header {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
-    .close_popup{
-      color:white;
+    box-sizing: border-box;
+    .close_popup {
+      color: white;
       background-color: black;
       border: none;
     }
   }
 
-  .caroussel_content{
+  .modal-body {
     display: flex;
-    justify-content: center;
-    padding: 10px;
-    img{
-      max-height: 300px;
-      width: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    .box-carousel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 800px;
+      max-height: 200px;
+      box-sizing: border-box;
     }
+  }
+  .image-carousel {
+    height: auto;
+    max-width: 450px;
+  }
+  @media screen and (max-width: 1200px) {
+    .image-carousel {
+      max-width: 300px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .image-carousel {
+      max-width: 200px;
+    }
+  }
+
+  .modal-footer {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
   }
 }

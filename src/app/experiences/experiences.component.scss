@@ -5,9 +5,9 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px;
-  padding-bottom: 70px;
+  padding: 10px 20px 5px;
   box-sizing: border-box;
+  background-color: black;
 
   h2 {
     margin: 0;
@@ -133,7 +133,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         padding: 10px 20px;
-        
+
         .competences_contenu{
           display: flex;
           flex-direction: column;

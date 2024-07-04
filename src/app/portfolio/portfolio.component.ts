@@ -16,11 +16,9 @@ export class PortfolioComponent implements OnInit {
   isCollapsed: boolean = true;
   filtering: boolean = false;
 
-  // Les langages :
   typescript: boolean = false;
   javascript: boolean = false;
   csharp: boolean = false;
-  // Les framework :
   expressjs: boolean = false;
   angular: boolean = false;
   react: boolean = false;
@@ -62,7 +60,7 @@ export class PortfolioComponent implements OnInit {
     }
 
     this.projets = this.projetService.GetProjectByFilter(filterTags);
-  } // pour le filtre de nos projet, on récupère la fonction qu'on a créée dans nos services
+  }
 
   ResetFilters(){
     this.typescript = false;

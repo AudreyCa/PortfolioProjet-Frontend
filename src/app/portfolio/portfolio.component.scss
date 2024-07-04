@@ -1,21 +1,28 @@
 .portfolio-content {
   max-width: 1140px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   padding: 10px;
-  padding-bottom: 70px;
+  padding: 10px 20px 5px;
+  background-color: black;
 
   h2 {
     margin: 0;
-    padding: 30px 10px;
-    background-image: linear-gradient(to bottom,#ffffff, #be97b6, #af78a3, #c577b4);
+    padding: 10px 10px 25px;
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff,
+      #be97b6,
+      #af78a3,
+      #c577b4
+    );
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    // color: #c577b4;
     font-weight: 800;
     font-size: clamp(1.5625rem, 1.2336rem + 1.7544vw, 2.8125rem);
     letter-spacing: 4px;
@@ -23,6 +30,7 @@
 
   .btn-filtre {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     .btn_filtre_projets {
       padding: auto;
@@ -41,15 +49,86 @@
     }
   }
 
+  .filtres {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+    form {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .form-check {
+        margin: 0;
+        padding: 10px;
+
+        input[type="checkbox"] {
+          display: none;
+        }
+
+        #checkTypescript:checked + #typescript_label {
+          background-color: #5555556e;
+        }
+        #checkJavascript:checked + #javascript_label {
+          background-color: #5555556e;
+        }
+        #checkCSharp:checked + #csharp_label {
+          background-color: #5555556e;
+        }
+        #checkExpress:checked + #express_label {
+          background-color: #5555556e;
+        }
+        #checkAngular:checked + #angular_label {
+          background-color: #5555556e;
+        }
+        #checkReact:checked + #react_label {
+          background-color: #5555556e;
+        }
+
+        label {
+          width: 130px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          padding: 20px 20px 10px;
+          border-radius: 20%;
+
+          svg {
+            height: 60px;
+            width: 60px;
+          }
+          p {
+            margin: 0;
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+
   .container-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 5px;
+    box-sizing: border-box;
 
-    .card-project {
+    .cards-project {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 350px;
       margin: 5px;
+    }
+    @media screen and (max-width: 400px) {
+      .cards-project {
+        width: 250px;
+        margin: 5px;
+      }
     }
   }
 }

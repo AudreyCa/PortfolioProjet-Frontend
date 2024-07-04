@@ -1,4 +1,4 @@
-<div class="container_modal-projets">
+<div class="container_modal_projets">
 
   <div class="modal-header">
     <h2>{{projet.titre}}</h2>
@@ -11,25 +11,23 @@
   </div>
 
   <div class="modal-body">
-    <carousel>
-      <div *ngFor="let image of projet.images">
+    <carousel id="box-carousel">
+      <div class="slides_container" *ngFor="let image of projet.images">
         <slide class="caroussel_content">
-          <img src={{image}} alt="slide du projet" style="display: block; width: 100%;">
+          <img src={{image}} alt="slide du projet" class="image-carousel">
         </slide>
       </div>
     </carousel>
 
-    <h3 class="mt-2">Description</h3>
-    <p>{{projet.description}}</p>
-    <p> Dépôt GitHub : <a href={{projet.lien}} target="_blank">ici</a></p>
+    <h3 class="descirption">Description</h3>
+    <p class="descirption">{{projet.description}}</p>
+    <p class="descirption"> Dépôt GitHub : <a href={{projet.lien}} target="_blank">ici</a></p>
 
-    <hr>
-    <div class="d-flex flex-wrap">
+    <div class="modal-footer">
       <div *ngFor="let tag of projet.tags">
-        <div class="tag me-2 mb-1" [style.background-color]="tag.color">{{tag}}</div>
+        <div class="tag">{{tag}}</div>
       </div>
     </div>
-
   </div>
 
 </div>
