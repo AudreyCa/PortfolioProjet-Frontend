@@ -12,7 +12,7 @@
       <div>
         <form>
           <div class="form-check">
-            <input type="checkbox" id="checkTypescript" [(ngModel)]="typescript" (change)="Filter()" name="Typescript">
+            <input type="checkbox" id="checkTypescript" [(ngModel)]="TypeScript" (change)="Filter()" name="TypeScript">
             <label for="checkTypescript" id="typescript_label">
               <svg width="30" height="30" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.31328 11.0156H28.6734V28.282H5.31328V11.0156Z" fill="black"/>
@@ -23,7 +23,7 @@
           </div>
 
           <div class="form-check">
-            <input type="checkbox" id="checkJavascript" [(ngModel)]="javascript" (change)="Filter()" name="Javascript">
+            <input type="checkbox" id="checkJavascript" [(ngModel)]="JavaScript" (change)="Filter()" name="JavaScript">
             <label for="checkJavascript" id="javascript_label">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0H30V30H0V0Z" fill="#F7DF1E"/>
@@ -34,7 +34,7 @@
           </div>
 
           <div class="form-check">
-            <input type="checkbox" id="checkCSharp" [(ngModel)]="csharp"
+            <input type="checkbox" id="checkCSharp" [(ngModel)]="CSharp"
               (change)="Filter()" name="C#">
             <label for="checkCSharp" id="csharp_label">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@
           </div>
 
           <div class="form-check">
-            <input type="checkbox" id="checkExpress" [(ngModel)]="expressjs" (change)="Filter()" name="Express.js">
+            <input type="checkbox" id="checkExpress" [(ngModel)]="Express" (change)="Filter()" name="Express.js">
             <label for="checkExpress"  id="express_label">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.9688 0H7.03125C3.148 0 0 3.148 0 7.03125V22.9688C0 26.852 3.148 30 7.03125 30H22.9688C26.852 30 30 26.852 30 22.9688V7.03125C30 3.148 26.852 0 22.9688 0Z" fill="#242938"/>
@@ -58,7 +58,7 @@
           </div>
 
           <div class="form-check">
-            <input type="checkbox" id="checkAngular" [(ngModel)]="angular"
+            <input type="checkbox" id="checkAngular" [(ngModel)]="Angular"
               (change)="Filter()" name="Angular">
             <label for="checkAngular" id="angular_label">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@
           </div>
 
           <div class="form-check">
-            <input type="checkbox" id="checkReact" [(ngModel)]="react"
+            <input type="checkbox" id="checkReact" [(ngModel)]="React"
               (change)="Filter()" name="React">
             <label for="checkReact" id="react_label">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,5 +94,6 @@
       <app-card-project [projet]="projet" class="card-perso"></app-card-project>
     </div>
   </div>
+
 
 </div>

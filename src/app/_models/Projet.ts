@@ -1,11 +1,9 @@
-import { Tag } from "./Tag";
-
 export interface Projet {
   id: number;
   titre: string;
+  images: string[];
+  lien: string;
   resume: string;
   description: string;
-  lien: string;
-  images: string[];
-  tags: Tag[];
+  tags: string[];
 }

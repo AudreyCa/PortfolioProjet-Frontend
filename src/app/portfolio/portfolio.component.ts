@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Projet } from '../_models/Projet';
 import { ProjetsService } from '../_services/projets.service';
-import { Tag } from '../_models/Tag';
 
 @Component({
   selector: 'app-portfolio',
@@ -11,19 +10,21 @@ import { Tag } from '../_models/Tag';
 })
 export class PortfolioComponent implements OnInit {
 
-  projets = {} as Projet[];
+  projets: Projet[] = [];
 
   isCollapsed: boolean = true;
   filtering: boolean = false;
 
-  typescript: boolean = false;
-  javascript: boolean = false;
-  csharp: boolean = false;
-  expressjs: boolean = false;
-  angular: boolean = false;
-  react: boolean = false;
+  TypeScript: boolean = false;
+  JavaScript: boolean = false;
+  CSharp: boolean = false;
+  Express: boolean = false;
+  Angular: boolean = false;
+  React: boolean = false;
 
-  constructor(private titleService: Title, private projetService: ProjetsService){
+  constructor(
+    private titleService: Title,
+    private projetService: ProjetsService){
     this.titleService.setTitle('Audrey Cannesson - Portfolio');
 
   }
@@ -31,29 +32,29 @@ export class PortfolioComponent implements OnInit {
     this.projets = this.projetService.GetProjects();
   }
 
-  Filter(){
-    let filterTags: Tag[] = [];
+  Filter() {
+    let filterTags: string[] = [];
 
-    if(this.typescript){
-      filterTags.push(Tag.TYPESCRIPT);
+    if(this.TypeScript){
+      filterTags.push('TypeScript');
     }
-    if(this.javascript){
-      filterTags.push(Tag.JAVASCRIPT);
+    if(this.JavaScript){
+      filterTags.push('JavaScript');
     }
-    if(this.expressjs){
-      filterTags.push(Tag.EXPRESSJS);
+    if(this.Express){
+      filterTags.push('Express');
     }
-    if(this.csharp){
-      filterTags.push(Tag.CSHARP);
+    if(this.CSharp){
+      filterTags.push('CSharp');
     }
-    if(this.angular){
-      filterTags.push(Tag.ANGULAR);
+    if(this.Angular){
+      filterTags.push('Angular');
     }
-    if(this.react){
-      filterTags.push(Tag.REACT);
+    if(this.React){
+      filterTags.push('React');
     }
 
-    if(this.typescript || this.javascript || this.expressjs || this.csharp || this.angular || this.react) {
+    if(this.TypeScript || this.JavaScript || this.Express || this.CSharp || this.Angular || this.React) {
       this.filtering = true;
     } else{
       this.filtering = false;
@@ -62,13 +63,14 @@ export class PortfolioComponent implements OnInit {
     this.projets = this.projetService.GetProjectByFilter(filterTags);
   }
 
+
   ResetFilters(){
-    this.typescript = false;
-    this.javascript = false;
-    this.expressjs = false;
-    this.csharp = false;
-    this.angular = false;
-    this.react = false;
+    this.TypeScript = false;
+    this.JavaScript = false;
+    this.Express = false;
+    this.CSharp = false;
+    this.Angular = false;
+    this.React = false;
     this.filtering = false;
 
     this.projets = this.projetService.GetProjects();

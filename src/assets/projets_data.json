@@ -1,0 +1,98 @@
+[
+  {
+    "id": 0,
+    "titre": "Mon premier portfolio",
+    "images": [
+      "../../assets/Portfolio-alternance1.png",
+      "../../assets/Portfolio-alternance2.png",
+      "../../assets/Portfolio-alternance3.png",
+      "../../assets/Portfolio-alternance4.png"
+    ],
+    "lien": "//audreyca-developpeuse-web.netlify.app/",
+    "resume": "Projet front-end avec React.js",
+    "description": "Voici le premier projet que je fais avec React.Js. Il a été déployé en mai 2023. Ce projet a été réalisé seule. L'objectif était de trouver une alternance pour ma formation de 'développeur informatique' avec Openclassrooms.",
+    "tags": [
+      "React"
+    ]
+  },
+  {
+    "id": 1,
+    "titre": "Sample Angular App",
+    "images": [
+      "../../assets/Image1.jpg",
+      "../../assets/Image2.jpg",
+      "../../assets/Image3.jpg"
+    ],
+    "lien": "//www.github.com",
+    "resume": "Fullstack web app developed using Angular and Express.JS",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor innt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecatunt in culpa qui officia deserunt mollit  laborum.",
+    "tags": [
+      "Angular",
+      "TypeScript",
+      "Express"
+    ]
+  },
+  {
+    "id": 2,
+    "titre": "Sample .Net App",
+    "images": [
+      "../../assets/Image1.jpg",
+      "../../assets/Image2.jpg",
+      "../../assets/Image3.jpg"
+    ],
+    "lien": "//www.github.com",
+    "resume": "Fullstack web app developed using React and ASP.NET",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat , sunt in culpa qui officia deserunt mollit anim est laborum.",
+    "tags": [
+      "React",
+      "CSharp",
+      "Express"
+    ]
+  },
+  {
+    "id": 3,
+    "titre": "Web API Project",
+    "images": [
+      "../../assets/Image1.jpg",
+      "../../assets/Image2.jpg",
+      "../../assets/Image3.jpg"
+    ],
+    "lien": "//www.github.com",
+    "resume": "Web API Project that was developed for a class project.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor t ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat csunt in culpa qui officia deserunt mollit ani est laborum.",
+    "tags": [
+      "React",
+      "CSharp"
+    ]
+  },
+  {
+    "id": 4,
+    "titre": "Chrome Extension",
+    "images": [
+      "../../assets/Image1.jpg",
+      "../../assets/Image2.jpg",
+      "../../assets/Image3.jpg"
+    ],
+    "lien": "//www.github.com",
+    "resume": "Developed a chrome extension that tracks the prices of furniture.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occent, sunt in culpa qui officia deserunt mollitst laborum.",
+    "tags": [
+      "JavaScript"
+    ]
+  },
+  {
+    "id": 5,
+    "titre": "Mobile App",
+    "images": [
+      "../../assets/Image1.jpg",
+      "../../assets/Image2.jpg",
+      "../../assets/Image3.jpg"
+    ],
+    "lien": "//www.github.com",
+    "resume": "Mobile app developed in java that tracks the departure and arrival of trains.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempot ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaeca sunt in culpa qui officia deseruntaborum.",
+    "tags": [
+      "CSharp"
+    ]
+  }
+]

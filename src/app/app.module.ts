@@ -17,6 +17,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule } from '@angular/forms';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { NavIconComponent } from './nav-icon/nav-icon.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { NavIconComponent } from './nav-icon/nav-icon.component';
     CollapseModule.forRoot(), //pour le filtre
     FormsModule, //pour le filtre
     AccordionModule.forRoot(), // pour la page des expériences
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

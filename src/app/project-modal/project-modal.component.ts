@@ -10,7 +10,7 @@ import { Projet } from '../_models/Projet';
 export class ProjectModalComponent {
 
   projet = {} as Projet;
-  
+
 
   constructor(public bsModalRef: BsModalRef) {
 
