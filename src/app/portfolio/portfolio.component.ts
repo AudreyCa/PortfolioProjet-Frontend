@@ -18,9 +18,12 @@ export class PortfolioComponent implements OnInit {
   TypeScript: boolean = false;
   JavaScript: boolean = false;
   CSharp: boolean = false;
+  Node: boolean = false;
   Express: boolean = false;
   Angular: boolean = false;
   React: boolean = false;
+  CSS: boolean = false;
+  Agile: boolean = false;
 
   constructor(
     private titleService: Title,
@@ -47,14 +50,23 @@ export class PortfolioComponent implements OnInit {
     if(this.CSharp){
       filterTags.push('CSharp');
     }
+    if(this.Node){
+      filterTags.push('Node');
+    }
     if(this.Angular){
       filterTags.push('Angular');
     }
     if(this.React){
       filterTags.push('React');
     }
+    if(this.CSS){
+      filterTags.push('CSS');
+    }
+    if(this.Agile){
+      filterTags.push('Agile');
+    }
 
-    if(this.TypeScript || this.JavaScript || this.Express || this.CSharp || this.Angular || this.React) {
+    if(this.TypeScript || this.JavaScript || this.Express || this.CSharp || this.Node || this.Angular || this.React || this.CSS || this.Agile) {
       this.filtering = true;
     } else{
       this.filtering = false;
@@ -69,8 +81,11 @@ export class PortfolioComponent implements OnInit {
     this.JavaScript = false;
     this.Express = false;
     this.CSharp = false;
+    this.Node = false;
     this.Angular = false;
     this.React = false;
+    this.CSS = false;
+    this.Agile = false;
     this.filtering = false;
 
     this.projets = this.projetService.GetProjects();

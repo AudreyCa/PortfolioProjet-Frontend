@@ -67,22 +67,7 @@
           display: none;
         }
 
-        #checkTypescript:checked + #typescript_label {
-          background-color: #5555556e;
-        }
-        #checkJavascript:checked + #javascript_label {
-          background-color: #5555556e;
-        }
-        #checkCSharp:checked + #csharp_label {
-          background-color: #5555556e;
-        }
-        #checkExpress:checked + #express_label {
-          background-color: #5555556e;
-        }
-        #checkAngular:checked + #angular_label {
-          background-color: #5555556e;
-        }
-        #checkReact:checked + #react_label {
+        #checkTypescript:checked + #typescript_label, #checkJavascript:checked + #javascript_label, #checkCSharp:checked + #csharp_label, #checkNode:checked + #node_label, #checkExpress:checked + #express_label, #checkAngular:checked + #angular_label, #checkReact:checked + #react_label, #checkCSS:checked + #CSS_label, #checkAgile:checked + #agile_label {
           background-color: #5555556e;
         }
 
