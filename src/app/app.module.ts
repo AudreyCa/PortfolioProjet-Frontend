@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { NavIconComponent } from './nav-icon/nav-icon.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     CardProjectComponent,
     ProjectModalComponent,
-    NavIconComponent
+    NavIconComponent,
+    ErrorpageComponent
   ],
   imports: [
     BrowserModule,
