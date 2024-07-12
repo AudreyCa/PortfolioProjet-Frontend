@@ -78,5 +78,17 @@
     letter-spacing: 4px;
   }
 
-}
+  a{
+    text-decoration: none;
+    margin: 10px;
+    padding: auto;
 
+    .backToSafety{
+      margin: 0;
+      padding: 10px;
+      font-size: clamp(1.25rem, 0.9211rem + 1.7544vw, 2.5rem);
+      letter-spacing: 4px;
+    }
+  }
+
+}
