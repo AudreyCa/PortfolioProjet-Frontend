@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   padding: 10px 20px 5px;
   box-sizing: border-box;
-  background-color: black;
+  background-color: #0a0a0b;
 
   h2 {
     margin: 0;
@@ -34,7 +34,7 @@
       width: 200px;
       height: 50px;
       color: white;
-      background-color: black;
+      background-color: #0a0a0b;
       border: 2px solid #5bfdd7;
       border-radius: 50px;
       &:hover {
@@ -72,14 +72,14 @@
           padding: 10px;
           font-size: clamp(1.125rem, 1.0099rem + 0.614vw, 1.5625rem);
           font-weight: 600;
-          text-shadow: 3px 2px 4px black;
+          text-shadow: 3px 2px 4px #0a0a0b;
 
           .card-title{
             margin: 0;
           }
 
           svg{
-            filter: drop-shadow(2px 2px 1px black);
+            filter: drop-shadow(2px 2px 1px #0a0a0b);
           }
         }
       }
@@ -105,7 +105,7 @@
           text-decoration-thickness: 3px;
           a{
             text-decoration: none;
-            color: black;
+            color: #0a0a0b;
           }
         }
         .titre-indication{

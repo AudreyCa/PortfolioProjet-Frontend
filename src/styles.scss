@@ -16,7 +16,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   box-shadow: none;
-  background-color: black;
+  background-color: #0a0a0b;
   color: white;
   font-family: "Roboto Slab", serif;
   box-sizing: border-box;
@@ -27,7 +27,7 @@ html {
     padding:0;
     margin:0;
     height: 100%;
-    background-color: black;
+    background-color: #0a0a0b;
   }
 }
 
@@ -37,10 +37,10 @@ html {
   height: 0px;
 }
 ::-webkit-scrollbar-track {
-  background: black;
+  background: #0a0a0b;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#ec887a, #c577b4, #5bfdd7, #1858e2), black;
+  background: linear-gradient(#ec887a, #c577b4, #5bfdd7, #1858e2), #0a0a0b;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.479);
 }

@@ -32,7 +32,7 @@
     ],
     "lienSite": "",
     "resume": "Application Fullstack Angular et Node.JS",
-    "description": "J'ai réalisé cette application fullstack, seule, dans le cadre de mon stage de Concepteur Développeur d'Applications, entre janvier et mars 2023. Cette application permet d'automatiser le processus de génération de documents administratifs pour la photographe et gérant de Alpix Photo. Ce projet a été fait avec Angular et Express.JS. Je l'ai réalisé seule dans le cadre de mon stage de Concepteur Développeur d'Application entre janvier et mars 2023. Google Sheet a été utilisé en guise de base de données.",
+    "description": "Cette application permet d'automatiser le processus de génération de documents administratifs pour la photographe et gérant de Alpix Photo. Ce projet a été fait avec Angular et Express.JS. Je l'ai réalisé seule dans le cadre de mon stage de Concepteur Développeur d'Application entre janvier et mars 2023. Google Sheet a été utilisé en guise de base de données.",
     "tags": [
       "Angular",
       "TypeScript",
@@ -191,7 +191,7 @@
     ],
     "lienSite": "",
     "resume": "Développement Fullstack",
-    "description": "Dans le cadre de mon projet final lors de la formation de Concepteur Développeur d'Applications, j'ai réalisé un application fullstack avec Angular et Node.js. La base de données a été développer avec PostgreSQL. Pour utiliser cette application, il faut créer un compte. Chaque utilisateur peut créer des liste d'envies, de choses à faire quand il part en vacances. L'application a été déployer avec electron.",
+    "description": "Dans le cadre de mon projet final lors de la formation de Concepteur Développeur d'Applications, j'ai réalisé une application fullstack avec Angular et Node.js. La base de données a été développer avec PostgreSQL. Pour utiliser cette application, il faut créer un compte. Chaque utilisateur peut créer des liste d'envies, de choses à faire quand il part en vacances. L'application a été déployer avec ElectronJS",
     "tags": [
       "Angular",
       "TypeScript",

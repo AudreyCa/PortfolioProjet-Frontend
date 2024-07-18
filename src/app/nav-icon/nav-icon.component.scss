@@ -4,11 +4,15 @@
   left: 0;
   right: 0;
   display: none;
+  height: 70px;
 
   nav {
-    padding: auto;
     background-color: rgba(34, 34, 34, 0.911);
     border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
 
     ul {
       list-style-type: none;
@@ -17,6 +21,8 @@
       padding: 10px;
       display: flex;
       align-items: center;
+      justify-content: space-around;
+      width: 100%;
 
       a {
         text-decoration: none;
@@ -48,7 +54,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    height: 70px;
   }
 }
