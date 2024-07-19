@@ -33,7 +33,7 @@
   .intro-contact,
   .intro-recommandations {
     padding: 5px 20px;
-    text-align: justify;
+    text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -49,8 +49,12 @@
       margin-bottom: 10px;
     }
     .mailto {
-      color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
-      text-decoration: none;margin-left: 10px;
+      color: #68A4FD;
+      text-decoration: none;
+      margin-left: 10px;
+      &:hover{
+        color: #b9d3fa;
+      }
     }
   }
 
@@ -66,7 +70,7 @@
       align-items: center;
       margin-bottom: 10px;
       text-decoration: none;
-      color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+      color: #68A4FD;
       justify-content: center;
 
       svg {
@@ -75,6 +79,9 @@
       p,
       .mailto {
         margin: 0;
+      }
+      &:hover{
+        color: #b9d3fa;
       }
     }
   }

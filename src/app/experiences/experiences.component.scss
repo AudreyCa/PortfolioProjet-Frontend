@@ -33,13 +33,13 @@
       margin: 10px;
       width: 200px;
       height: 50px;
-      color: white;
+      color: #fafafa;
       background-color: #0a0a0b;
       border: 2px solid #5bfdd7;
       border-radius: 50px;
       &:hover {
         color: #5bfdd7;
-        border: 3px solid white;
+        border: 3px solid #fafafa;
         font-weight: 700;
       }
     }
@@ -66,13 +66,13 @@
           width: 100%;
           display: flex;
           justify-content: space-between;
-          color: white;
+          color: #0a0a0b;
           background-color: #5bfdd7;
           border: none;
           padding: 10px;
           font-size: clamp(1.125rem, 1.0099rem + 0.614vw, 1.5625rem);
           font-weight: 600;
-          text-shadow: 3px 2px 4px #0a0a0b;
+          // text-shadow: 3px 2px 4px #0a0a0b;
 
           .card-title{
             margin: 0;
@@ -97,6 +97,7 @@
         }
         .titre-expe{
           font-size: clamp(1.125rem, 1.0428rem + 0.4386vw, 1.4375rem);
+          font-weight: 800;
           margin: 0;
           padding : 15px 5px 5px;
           text-decoration: underline;
@@ -119,7 +120,6 @@
         }
         .contenu-txt{
           padding: 0;
-          text-align: justify;
           p{
             margin: 5px;
             span{
