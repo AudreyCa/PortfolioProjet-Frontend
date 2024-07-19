@@ -25,27 +25,27 @@
       <h3>Description</h3>
       <p>{{projet.description}}</p>
       <div class="link">
-        <ng-container *ngIf="projet.lienGit.length > 0;  else noLinkGit">
-          <p> Dépôt GitHub: </p>
-          <div *ngFor="let link of projet.lienGit">
-            <a href={{link}} target="_blank">
-              <p>ici</p>
+        <p> GitHub: </p>
+        <ng-container *ngIf="projet.lienFront != ''">
+            <a href={{projet.lienFront}} target="_blank">
+              <p>Front-end</p>
             </a>
-          </div>
         </ng-container>
-        <ng-template #noLinkGit>
-          <p>Pas de lien git disponible</p>
-        </ng-template>
+        <ng-container *ngIf="projet.lienBack != ''">
+            <a href={{projet.lienBack}} target="_blank">
+              <p>Back-end</p>
+            </a>
+        </ng-container>
       </div>
       <div class="link">
         <ng-container class="link" *ngIf="projet.lienSite != '';  else noLinkSite">
           <p> Déploiement: </p>
           <a href={{projet.lienSite}} target="_blank">
-            <p>ici</p>
+            <p>Site Web</p>
           </a>
         </ng-container>
         <ng-template #noLinkSite>
-          <p>Pas de lien de site disponible</p>
+          <p>Pas de déploiement disponible</p>
         </ng-template>
       </div>
     </div>

@@ -22,10 +22,10 @@ html {
   box-sizing: border-box;
   overflow-x: hidden;
 
-  body{
+  body {
     box-shadow: none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     height: 100%;
     background-color: #0a0a0b;
   }
@@ -55,14 +55,31 @@ html {
   font-size: 14px;
   height: 30px;
   border-radius: 25px;
-  background-color: #AA5098; // #c577b4
+  background-color: #aa5098; // #c577b4
   color: #fafafa;
 }
 
 /* Modale des projets sur la page portfolio */
-.modal-container{
-  display: flex;
+.modal {
+  display: flex !important;
   justify-content: center;
-  align-items: center;
-  max-width: 800px;
+  align-items: start;
+  padding-top: 10px;
+
+  .modal-dialog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+  }
+  @media screen and (max-width: 750px) {
+    .modal-dialog {
+      max-width: 400px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .modal-dialog {
+      max-width: 250px;
+    }
+  }
 }

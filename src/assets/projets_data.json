@@ -8,9 +8,8 @@
       "../../assets/Portfolio-alternance3.png",
       "../../assets/Portfolio-alternance4.png"
     ],
-    "lienGit": [
-      "//github.com/AudreyCa/Portfolio-Frontend"
-    ],
+    "lienFront": "//github.com/AudreyCa/Portfolio-Frontend",
+    "lienBack": "",
     "lienSite": "//audreyca-developpeuse-web.netlify.app/",
     "resume": "Projet front-end avec React.js",
     "description": "Voici le premier projet que je fais avec React.Js. Il a été déployé à l'été 2023. Ce projet a été réalisé seule. L'objectif était de trouver une alternance pour ma formation de 'développeur informatique' avec Openclassrooms.",
@@ -26,10 +25,8 @@
       "../../assets/Quickdocs2.png",
       "../../assets/Quickdocs3.png"
     ],
-    "lienGit": [
-      "//github.com/AudreyCa/Portfolio-Frontend",
-      "//github.com/AudreyCa/quickdocs_backend"
-    ],
+    "lienFront": "//github.com/AudreyCa/quickdocs_frontend",
+    "lienBack": "//github.com/AudreyCa/quickdocs_backend",
     "lienSite": "",
     "resume": "Application Fullstack Angular et Node.JS",
     "description": "Cette application permet d'automatiser le processus de génération de documents administratifs pour la photographe et gérant de Alpix Photo. Ce projet a été fait avec Angular et Express.JS. Je l'ai réalisé seule dans le cadre de mon stage de Concepteur Développeur d'Application entre janvier et mars 2023. Google Sheet a été utilisé en guise de base de données.",
@@ -50,9 +47,8 @@
       "../../assets/Pamplemousse3.png",
       "../../assets/Pamplemousse4.png"
     ],
-    "lienGit": [
-      "//github.com/AudreyCa/Projet1-Digifab-site-pamplemousse"
-    ],
+    "lienFront": "//github.com/AudreyCa/Projet1-Digifab-site-pamplemousse",
+    "lienBack": "",
     "lienSite": "//exposition-pamplemousse.netlify.app",
     "resume": "Premier site en HTML et CSS",
     "description": "J'ai réalisé ce premier site fictif lors de mes débuts dans le développement web. L'objectif etait de réaliser un site uniquement en HTML et CSS suivant un thème : le pamplemousse.",
@@ -68,9 +64,8 @@
       "../../assets/Booki1.png",
       "../../assets/Booki2.png"
     ],
-    "lienGit": [
-      "//github.com/AudreyCa/booki-projet2"
-    ],
+    "lienFront": "//github.com/AudreyCa/booki-projet2",
+    "lienBack": "",
     "lienSite": "//audreyca.github.io/booki-projet2/",
     "resume": "Site statique en HTML et CSS",
     "description": "J'ai réalisé ce site dans le cadre de ma formation en alternance avec OpenClassrooms. Ce site fictif est totalement responsive. Les objectifs de ce projet étaient : Implémenter une interface responsive avec HTML et CSS, intégrer du contenu conformément à une maquette, versionner son projet avec Git et Github, installer un environnement de développement front-end.",
@@ -88,9 +83,8 @@
       "../../assets/BluelArchi3.png",
       "../../assets/BluelArchi4.png"
     ],
-    "lienGit": [
-      "//github.com/AudreyCa/Portfolio-architecte-sophie-bluel"
-    ],
+    "lienFront": "//github.com/AudreyCa/Portfolio-architecte-sophie-bluel",
+    "lienBack": "",
     "lienSite": "",
     "resume": "Page web dynamique avec JavaScript",
     "description": "J'ai réalisé ce site dans le cadre de ma formation en alternance avec OpenClassrooms. Les objectifs de ce projet étaient : Gérer les événements utilisateurs avec JavaScript, manipuler les éléments du DOM avec JavaScript, récupérer les données utilisateurs dans le JavaScript via des formulaires. Je n'ai réalisé que la partie frontend. Le backend a été réalisé par un développeur d'OpenClassrooms. Figma, Notion et Swagger ont été utilisés.",
@@ -109,7 +103,8 @@
       "../../assets/Qwenta3.png",
       "../../assets/Qwenta4.png"
     ],
-    "lienGit": [],
+    "lienFront": "",
+    "lienBack": "",
     "lienSite": "",
     "resume": "Plannification du développement d'un site",
     "description": "Voici un projet OpenClassrooms, dans le cadre de ma formation en alternance. Les objectifs de ce projet étaient : Découper une fonctionnalités en tâches pour préparer le développement, mettre en place une méthode de veille technologique, présenter la solution technique, rédiger les spécifications techniques d'un projet web à partir de besoins fonctionnels, suivre le déroulement du projet grâce à un outil de gestion de projet. J'ai utiliser Notion, Feedly, PowerPoint. Mes support : une maquette figma, un modèle de spécifications techniques et un tableau Kanban pré-rempli.",
@@ -125,9 +120,8 @@
       "../../assets/Carducci1.png",
       "../../assets/Carducci2.png"
     ],
-    "lienGit": [
-      "//github.com/AudreyCa/nina-carducci.github.io"
-    ],
+    "lienFront": "//github.com/AudreyCa/nina-carducci.github.io",
+    "lienBack": "",
     "lienSite": "//audreyca.github.io/nina-carducci.github.io/",
     "resume": "Amélioration du site d'une photographe",
     "description": "Dans le cadre de ma formation en alternance, j'ai appris à débugger et à optimiser un site. Les objectifs de ce projet étaient : Optimiser les performances d’un site web, débugger un site web grâce aux Chrome DevTools, rédiger un cahier de recette pour tester un site.",
@@ -143,9 +137,8 @@
       "../../assets/Kasa1.png",
       "../../assets/Kasa2.png"
     ],
-    "lienGit": [
-      "//github.com/AudreyCa/kasa"
-    ],
+    "lienFront": "//github.com/AudreyCa/kasa",
+    "lienBack": "",
     "lienSite": "//audreyca.github.io/kasa/#/",
     "resume": "Site de location d'appartements avec React",
     "description": "Dans le cadre de ma formation en alternance, à partir d'une maquette Figma et d'un fichier JSON, j'ai développé une application avec React.JS. les objectifs étaient : Initialiser une application avec Create React App, configurer la navigation entre les pages de l'application avec React Router, développer des éléments de l'interface d'un site web grâce à des composants React. Cette application est responsive.",
@@ -163,10 +156,8 @@
       "../../assets/Grimoire3.png",
       "../../assets/Grimoire4.png"
     ],
-    "lienGit": [
-      "//github.com/AudreyCa/P7_VieuxGrimoire_Backend",
-      "//github.com/AudreyCa/P7_VieuxGrimoire_Frontend"
-    ],
+    "lienFront": "",
+    "lienBack": "//github.com/AudreyCa/P7_VieuxGrimoire_Frontend",
     "lienSite": "",
     "resume": "Site de location d'appartements avec React",
     "description": "Dans le cadre de ma formation en alternance, à partir d'un frontend déjà développé par un autre développeu, mon objectif était de créer un serveur avec Express et de la connecter à une base de données MongoDB. Le site 'Mon vieux Grimoire' est un site (fictif) de référencement et de notation de livres. Mon API devait permettre de gérer les accès aux sites ainsi que toute la logique concernant la gestions des informations des livres et de leur images.",
@@ -175,8 +166,7 @@
       "Express",
       "MongoDB"
     ]
-  }
-  ,
+  },
   {
     "id": 9,
     "titre": "Organisateur de voyages",
@@ -185,10 +175,8 @@
       "../../assets/Voyage2.png",
       "../../assets/Voyage3.png"
     ],
-    "lienGit": [
-      "//github.com/AudreyCa/App_voyage_frontend_Angular",
-      "//github.com/AudreyCa/App_voyage_backend_et_BDD"
-    ],
+    "lienFront": "//github.com/AudreyCa/App_voyage_frontend_Angular",
+    "lienBack": "//github.com/AudreyCa/App_voyage_backend_et_BDD",
     "lienSite": "",
     "resume": "Développement Fullstack",
     "description": "Dans le cadre de mon projet final lors de la formation de Concepteur Développeur d'Applications, j'ai réalisé une application fullstack avec Angular et Node.js. La base de données a été développer avec PostgreSQL. Pour utiliser cette application, il faut créer un compte. Chaque utilisateur peut créer des liste d'envies, de choses à faire quand il part en vacances. L'application a été déployer avec ElectronJS",
