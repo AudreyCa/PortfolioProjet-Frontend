@@ -10,13 +10,27 @@
   box-sizing: border-box;
   box-shadow: none;
 
-  h1 {
-    font-size: clamp(0.75rem, 0.5268rem + 1.1905vw, 1.375rem);
-    height: 30px;
+  .container-titre{
     display: flex;
     align-items: center;
-    margin: 0;
-    cursor: pointer;
+
+    .btn-switch-mode{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: auto;
+      height: 60px;
+      width: 60px;
+
+    }
+    h1 {
+      font-size: clamp(0.75rem, 0.5268rem + 1.1905vw, 1.375rem);
+      height: 30px;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      cursor: pointer;
+    }
   }
   nav {
     ul {
@@ -30,7 +44,7 @@
 
       a {
         text-decoration: none;
-        color: white;
+        color: var(--col-text);
         padding: 10px;
         font-size: clamp(0.875rem, 0.3942rem + 1.0256vw, 1.125rem);
       }
@@ -49,9 +63,9 @@
       .active-home {
         border-image: linear-gradient(
             to right,
-            #0a0a0b 0%,
+            var(--col-background) 0%,
             #ec887a 50%,
-            #0a0a0b 100%
+            var(--col-background) 100%
           )
           1;
         color: #ec887a;
@@ -60,9 +74,9 @@
       .active-portfolio {
         border-image: linear-gradient(
             to right,
-            #0a0a0b 0%,
+            var(--col-background) 0%,
             #c577b4 50%,
-            #0a0a0b 100%
+            var(--col-background) 100%
           )
           1;
         color: #c577b4;
@@ -71,19 +85,19 @@
       .active-expe {
         border-image: linear-gradient(
             to right,
-            #0a0a0b 0%,
-            #00ffc3 50%,
-            #0a0a0b 100%
+            var(--col-background) 0%,
+            #17cca2 50%,
+            var(--col-background) 100%
           )
           1;
-        color: #00ffc3;
+        color: #17cca2;
       }
       .active-contact {
         border-image: linear-gradient(
             to right,
-            #0a0a0b 0%,
+            var(--col-background) 0%,
             #4c80f1 50%,
-            #0a0a0b 100%
+            var(--col-background) 100%
           )
           1;
         color: #4c80f1;
@@ -91,13 +105,22 @@
     }
   }
   @media (max-width: 750px) {
-    h1{
-      width: 100%;
+    .container-titre{
       display: flex;
+      align-items: center;
       justify-content: center;
-      font-size: clamp(1.125rem, 0.8333rem + 1.5556vw, 1.5625rem);
-      text-align: center;
-      padding: 2%;
+
+      .btn-switch-mode{
+        padding-left: 10%;
+      }
+      h1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: clamp(1.125rem, 0.8333rem + 1.5556vw, 1.5625rem);
+        text-align: center;
+        padding: 2%;
+      }
     }
     nav {
       display: none;

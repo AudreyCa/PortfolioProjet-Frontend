@@ -1,4 +1,4 @@
-<div class="container-gobal">
+<div class="container-gobal" [ngClass]="{'light-theme' : !isDarkMode, 'dark-theme': isDarkMode}">
   <app-navigation></app-navigation>
   <router-outlet></router-outlet>
   <app-nav-icon></app-nav-icon>

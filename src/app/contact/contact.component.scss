@@ -7,7 +7,7 @@
   align-items: center;
   padding: 10px 20px 5px;
   box-sizing: border-box;
-  background-color: #0a0a0b;
+  background-color: var(--col-background);
 
   h2 {
     margin: 0;
@@ -28,6 +28,7 @@
     letter-spacing: 4px;
     text-align: center;
     white-space: pre-wrap;
+    text-shadow: 1px 1px 1px var(--col-text-TCont);
   }
 
   .intro-contact,
@@ -49,7 +50,7 @@
       margin-bottom: 10px;
     }
     .mailto {
-      color: #68A4FD;
+      color: #4c80f1;
       text-decoration: none;
       margin-left: 10px;
       &:hover{
@@ -70,7 +71,7 @@
       align-items: center;
       margin-bottom: 10px;
       text-decoration: none;
-      color: #68A4FD;
+      color: #4c80f1;
       justify-content: center;
 
       svg {
@@ -81,7 +82,7 @@
         margin: 0;
       }
       &:hover{
-        color: #b9d3fa;
+        color: #6fa2f0;
       }
     }
   }

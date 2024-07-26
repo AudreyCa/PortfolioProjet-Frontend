@@ -19,6 +19,7 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { NavIconComponent } from './nav-icon/nav-icon.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { DarkModeComponent } from './dark-mode/dark-mode.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
     CardProjectComponent,
     ProjectModalComponent,
     NavIconComponent,
-    ErrorpageComponent
+    ErrorpageComponent,
+    DarkModeComponent
   ],
   imports: [
     BrowserModule,

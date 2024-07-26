@@ -8,6 +8,8 @@ import { Title } from '@angular/platform-browser';
 })
 export class AccueilComponent {
 
+  isDarkMode: boolean | undefined;
+
   constructor(
     private titleService: Title,
     private renderer: Renderer2){

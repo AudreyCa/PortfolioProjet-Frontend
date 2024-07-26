@@ -17,7 +17,7 @@
   <title>Portfolio Audrey Cannesson</title>
 
 </head>
-<body>
+<body [ngClass]="{'light-theme' : !isDarkMode, 'dark-theme': isDarkMode}">
   <app-root></app-root>
 
   <script type="application/ld+json">
