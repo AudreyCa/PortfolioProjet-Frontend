@@ -8,6 +8,7 @@
   padding: 10px;
   padding: 10px 20px 5px;
   background-color: var(--col-background);
+  transition: background-color .6s ease-in-out;
 
   h2 {
     margin: 0;
@@ -53,7 +54,7 @@
   .filtres {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 10px;
 
     form {
       display: flex;
@@ -62,7 +63,7 @@
 
       .form-check {
         margin: 0;
-        padding: 10px;
+        padding: 5px;
 
         input[type="checkbox"] {
           display: none;
@@ -80,16 +81,17 @@
           justify-content: center;
           align-items: center;
           cursor: pointer;
-          padding: 20px 20px 10px;
+          padding: 1.5rem 1rem;
           border-radius: 20%;
 
           svg {
-            height: 60px;
-            width: 60px;
+            height: 45px;
+            width: 45px;
+            padding-bottom: 5px;
           }
           p {
             margin: 0;
-            padding: 5px;
+            font-size: clamp(0.75rem, 0.6184rem + 0.7018vw, 1.25rem);
           }
         }
       }

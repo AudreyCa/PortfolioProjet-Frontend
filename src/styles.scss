@@ -10,6 +10,7 @@
 :root {
   --col-background: #0a0a0b;
   --col-text: #fafafa;
+  transition: background-color .6s ease-in-out;
 }
 
 html {
@@ -97,13 +98,12 @@ html {
 }
 
 .light-theme {
-  --col-background: #cfd4d6;
+  --col-background: #f3f3f3; // cfd4d6
   --col-text: #0a0a0b;
   --col-text-TExpe: #17cca2;
   --col-text-TCont: #1858e2;
   --col-text-TAcc: #ec887a;
   --col-text-TPort: #c577b4;
-  --col-background-bloc: #cad1d4;
 }
 
 #theme-toggle {
@@ -159,15 +159,13 @@ html {
   transition: transform 0ms linear 100ms, opacity 100ms linear;
 }
 
-#theme-toggle:hover,
-#theme-toggle:focus {
+#theme-toggle:hover {
   outline: 0;
   opacity: 1;
   background: var(--col-background);
 }
 
-#theme-toggle:hover::after,
-#theme-toggle:focus-visible::after {
+#theme-toggle:hover::after{
   opacity: 0.5;
   font-size: 12px;
   transform: scale(1);

@@ -2,15 +2,15 @@
   margin: 0;
   padding: 0;
   max-width: 1140px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-/*   background-color: #0a0a0b;
-  color: #fafafa; */
   background-color: var(--col-background);
   color: var(--col-text);
   font-family: "Roboto Slab", serif;
   box-sizing: border-box;
   padding-bottom: 70px;
   box-shadow: none;
+  transition: background-color .6s ease-in-out;
 }
