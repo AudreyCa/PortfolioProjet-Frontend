@@ -8,6 +8,8 @@
   align-items: center;
   padding: 10px;
   border-radius: 5px;
+  background: var(--col-background);
+  color: var(--col-text);
 
   h3 {
     padding: 20px 0 10px;
@@ -19,8 +21,8 @@
     justify-content: space-between;
     box-sizing: border-box;
     .close_popup {
-      color: #fafafa;
-      background-color: #0a0a0b;
+      background: var(--col-background);
+      color: var(--col-text);
       border: none;
     }
   }
@@ -64,6 +66,21 @@
     }
   }
   @media screen and (max-width: 450px) {
+    .modal-header {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      align-items: center;
+      box-sizing: border-box;
+      text-align: flex-start;
+      .close_popup {
+        background: var(--col-background);
+        color: var(--col-text);
+        align-self: flex-end;
+        border: none;
+      }
+    }
+
     .image-carousel {
       max-width: 150px;
       height: 150px;
